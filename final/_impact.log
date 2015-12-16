@@ -1,0 +1,485 @@
+iMPACT Version: 14.2
+
+iMPACT log file Started on Wed Dec 09 18:37:18 2015
+
+Welcome to iMPACT
+iMPACT Version: 14.2
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 6:37:22 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "X:/EC 311/final/vga_display.bit"
+'1': Loading file 'X:/EC 311/final/vga_display.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 12/9/2015 6:37:29 PM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.2
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 6:50:33 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "X:/EC 311/final/vga_display.bit"
+'1': Loading file 'X:/EC 311/final/vga_display.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 12/9/2015 6:50:39 PM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.2
+The setting has been saved, to change the settings, please go toEdit->Preferences.// *** BATCH CMD : setPreference -pref StartupClock:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoSignature:FALSE
+// *** BATCH CMD : setPreference -pref KeepSVF:FALSE
+// *** BATCH CMD : setPreference -pref ConcurrentMode:FALSE
+// *** BATCH CMD : setPreference -pref UseHighz:FALSE
+// *** BATCH CMD : setPreference -pref svfUseTime:FALSE
+// *** BATCH CMD : setPreference -pref SpiByteSwap:AUTO_CORRECTION
+// *** BATCH CMD : setPreference -pref AutoInfer:TRUE
+// *** BATCH CMD : setPreference -pref SvfPlayDisplayComments:FALSE
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 6:58:20 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "X:/EC 311/final/vga_display.bit"
+'1': Loading file 'X:/EC 311/final/vga_display.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 12/9/2015 6:58:27 PM
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 7:01:53 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.2
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 7:02:12 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "X:/EC 311/final/vga_display.bit"
+'1': Loading file 'X:/EC 311/final/vga_display.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 12/9/2015 7:02:19 PM
+// *** BATCH CMD : Verify -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Verifying  device...INFO:iMPACT:2495 - Readback Size is 3711248.
+done.
+'1': Verification completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+PROGRESS_END - End Operation.
+Elapsed time =      4 sec.
+INFO:iMPACT - Current time: 12/9/2015 7:02:28 PM
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+PROGRESS_START - Starting Operation.
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.2
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "Nexys3", SN:210182520297
+INFO:iMPACT - Digilent Plugin: User Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Product Name: Nexys3
+INFO:iMPACT - Digilent Plugin: Serial Number: 210182520297
+INFO:iMPACT - Digilent Plugin: Product ID: 00D0010D
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0306
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 1600000 Hz
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 12/9/2015 7:07:27 PM
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc6slx16, Version : 4
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.2/ISE_DS/ISE/spartan6/data/xc6slx16.bsd...
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "X:/EC 311/final/vga_display.bit"
+'1': Loading file 'X:/EC 311/final/vga_display.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc6slx16 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 12/9/2015 7:07:35 PM
+// *** BATCH CMD : Program -p 1 
+PROGRESS_START - Starting Operation.
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+[0] CRC ERROR                                                              :        0
+[1] IDCODE ERROR                                                           :        0
+[2] DCM LOCK STATUS                                                        :        1
+[3] GTS_CFG_B STATUS                                                       :        1
+[4] GWE STATUS                                                             :        1
+[5] GHIGH STATUS                                                           :        1
+[6] DECRYPTION ERROR                                                       :        0
+[7] DECRYPTOR ENABLE                                                       :        0
+[8] HSWAPEN PIN                                                            :        1
+[9] MODE PIN M[0]                                                          :        1
+[10] MODE PIN M[1]                                                         :        1
+[11] RESERVED                                                              :        0
+[12] INIT_B PIN                                                            :        1
+[13] DONE PIN                                                              :        1
+[14] SUSPEND STATUS                                                        :        0
+[15] FALLBACK STATUS                                                       :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1100 1110 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at X:\EC   311\final\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

@@ -1,0 +1,1315 @@
+Release 14.2 - xst P.28xd (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: vga_display.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vga_display.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vga_display"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : vga_display
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\seven_alternate.v" into library work
+Parsing module <seven_alternate>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\clock_divider_4(2).v" into library work
+Parsing module <clock_divider_4>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\bin2led7.v" into library work
+Parsing module <binary_to_segment>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\basic_counter.v" into library work
+Parsing module <basic_counter>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_controller_640_60.v" into library work
+Parsing module <vga_controller_640_60>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\together.v" into library work
+Parsing module <together>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\Debouncer.v" into library work
+Parsing module <Debouncer>.
+Analyzing Verilog file "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" into library work
+Parsing module <vga_display>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vga_display>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 93: Result of 32-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 81: Assignment to slow_clk2 ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 108: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 131: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 153: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 175: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <vga_controller_640_60>.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 219: Result of 8-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 222: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 223: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 224: Result of 8-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 229: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 233: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 234: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 235: Result of 8-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 239: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 244: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 245: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 246: Result of 8-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 250: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 251: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 255: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 256: Result of 8-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 257: Result of 8-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Debouncer>.
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 276: Assignment to f1 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 277: Assignment to f3 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 278: Assignment to f5 ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 279: Assignment to f7 ignored, since the identifier is never used
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 286: Signal <debounced_click1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 287: Signal <moving_box1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 288: Signal <true_count1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 300: Signal <debounced_click2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 301: Signal <moving_box2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 302: Signal <true_count2> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 314: Signal <debounced_click3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 315: Signal <moving_box3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 316: Signal <true_count3> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 329: Signal <debounced_click4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 330: Signal <moving_box4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" Line 331: Signal <true_count4> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <together>.
+
+Elaborating module <basic_counter>.
+
+Elaborating module <clock_divider_4>.
+
+Elaborating module <seven_alternate>.
+
+Elaborating module <binary_to_segment>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vga_display>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v".
+        S_IDLE = 0
+        S_DOWN = 1
+        N = 2
+WARNING:Xst:647 - Input <R_control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <G_control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B_control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 276: Output port <PB_down> of the instance <df1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 276: Output port <PB_up> of the instance <df1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 277: Output port <PB_down> of the instance <df2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 277: Output port <PB_up> of the instance <df2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 278: Output port <PB_down> of the instance <df3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 278: Output port <PB_up> of the instance <df3> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 279: Output port <PB_down> of the instance <df4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_display_up.v" line 279: Output port <PB_up> of the instance <df4> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <clk_25Mhz>.
+    Found 51-bit register for signal <slow_count1>.
+    Found 51-bit register for signal <slow_count2>.
+    Found 1-bit register for signal <slow_clk1>.
+    Found 11-bit register for signal <x>.
+    Found 4-bit register for signal <state1>.
+    Found 4-bit register for signal <next_state1>.
+    Found 11-bit register for signal <y1>.
+    Found 4-bit register for signal <state2>.
+    Found 4-bit register for signal <next_state2>.
+    Found 11-bit register for signal <y2>.
+    Found 4-bit register for signal <state3>.
+    Found 4-bit register for signal <next_state3>.
+    Found 11-bit register for signal <y3>.
+    Found 4-bit register for signal <state4>.
+    Found 4-bit register for signal <next_state4>.
+    Found 11-bit register for signal <y4>.
+    Found 3-bit register for signal <R>.
+    Found 3-bit register for signal <G>.
+    Found 2-bit register for signal <B>.
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_GND_1_o_add_1_OUT> created at line 66.
+    Found 51-bit adder for signal <slow_count1[50]_GND_1_o_add_4_OUT> created at line 82.
+    Found 51-bit adder for signal <slow_count2[50]_GND_1_o_add_5_OUT> created at line 83.
+    Found 11-bit adder for signal <y1[10]_GND_1_o_add_22_OUT> created at line 108.
+    Found 11-bit adder for signal <y2[10]_GND_1_o_add_35_OUT> created at line 131.
+    Found 11-bit adder for signal <y3[10]_GND_1_o_add_48_OUT> created at line 153.
+    Found 11-bit adder for signal <y4[10]_GND_1_o_add_61_OUT> created at line 175.
+    Found 12-bit adder for signal <n0344> created at line 201.
+    Found 12-bit adder for signal <n0346> created at line 204.
+    Found 12-bit adder for signal <n0348> created at line 207.
+    Found 12-bit adder for signal <n0350> created at line 210.
+    Found 16-bit adder for signal <true_count1[15]_GND_1_o_add_150_OUT> created at line 288.
+    Found 16-bit adder for signal <true_count2[15]_GND_1_o_add_154_OUT> created at line 302.
+    Found 16-bit adder for signal <true_count3[15]_GND_1_o_add_158_OUT> created at line 316.
+    Found 16-bit adder for signal <true_count4[15]_GND_1_o_add_162_OUT> created at line 331.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_13_OUT<10:0>> created at line 93.
+    Found 1-bit 51-to-1 multiplexer for signal <x[5]_X_1_o_Mux_6_o> created at line 84.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <if_overlap1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <if_overlap2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count3<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <if_overlap3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <true_count4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <if_overlap4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <GND_1_o_x[10]_LessThan_12_o> created at line 92
+    Found 11-bit comparator lessequal for signal <n0068> created at line 201
+    Found 12-bit comparator lessequal for signal <n0072> created at line 201
+    Found 11-bit comparator lessequal for signal <n0077> created at line 204
+    Found 12-bit comparator lessequal for signal <n0081> created at line 204
+    Found 11-bit comparator lessequal for signal <n0086> created at line 207
+    Found 12-bit comparator lessequal for signal <n0090> created at line 207
+    Found 11-bit comparator lessequal for signal <n0096> created at line 210
+    Found 12-bit comparator lessequal for signal <n0100> created at line 210
+    Found 11-bit comparator lessequal for signal <n0105> created at line 221
+    Found 11-bit comparator lessequal for signal <n0107> created at line 221
+    Found 11-bit comparator lessequal for signal <n0112> created at line 232
+    Found 11-bit comparator lessequal for signal <n0114> created at line 232
+    Found 11-bit comparator lessequal for signal <n0119> created at line 243
+    Found 11-bit comparator lessequal for signal <n0121> created at line 243
+    Found 11-bit comparator lessequal for signal <n0126> created at line 254
+    Found 11-bit comparator lessequal for signal <n0128> created at line 254
+    Found 11-bit comparator lessequal for signal <n0131> created at line 254
+    Found 11-bit comparator lessequal for signal <n0134> created at line 254
+    Found 16-bit comparator greater for signal <GND_1_o_true_count1[15]_LessThan_152_o> created at line 289
+    Found 16-bit comparator greater for signal <GND_1_o_true_count2[15]_LessThan_156_o> created at line 303
+    Found 16-bit comparator greater for signal <GND_1_o_true_count3[15]_LessThan_160_o> created at line 317
+    Found 16-bit comparator greater for signal <GND_1_o_true_count4[15]_LessThan_164_o> created at line 332
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred 201 D-type flip-flop(s).
+	inferred  68 Latch(s).
+	inferred  23 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <vga_display> synthesized.
+
+Synthesizing Unit <vga_controller_640_60>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\vga_controller_640_60.v".
+        HMAX = 800
+        VMAX = 525
+        HLINES = 640
+        HFP = 648
+        HSP = 744
+        VLINES = 480
+        VFP = 482
+        VSP = 484
+        SPP = 0
+    Found 11-bit register for signal <hcounter>.
+    Found 11-bit register for signal <vcounter>.
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 1-bit register for signal <blank>.
+    Found 11-bit adder for signal <hcounter[10]_GND_2_o_add_4_OUT> created at line 48.
+    Found 11-bit adder for signal <vcounter[10]_GND_2_o_add_12_OUT> created at line 56.
+    Found 11-bit comparator lessequal for signal <n0014> created at line 63
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_2_o_LessThan_20_o> created at line 63
+    Found 11-bit comparator lessequal for signal <n0020> created at line 70
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_2_o_LessThan_23_o> created at line 70
+    Found 11-bit comparator greater for signal <hcounter[10]_GND_2_o_LessThan_24_o> created at line 75
+    Found 11-bit comparator greater for signal <vcounter[10]_GND_2_o_LessThan_25_o> created at line 75
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  25 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <vga_controller_640_60> synthesized.
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\Debouncer.v".
+    Found 1-bit register for signal <PB_sync_1>.
+    Found 17-bit register for signal <PB_cnt>.
+    Found 1-bit register for signal <PB_state>.
+    Found 1-bit register for signal <PB_sync_0>.
+    Found 17-bit adder for signal <PB_cnt[16]_GND_3_o_add_5_OUT> created at line 49.
+    Found 1-bit comparator equal for signal <PB_idle> created at line 41
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Debouncer> synthesized.
+
+Synthesizing Unit <together>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\together.v".
+    Summary:
+	no macro.
+Unit <together> synthesized.
+
+Synthesizing Unit <basic_counter>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\basic_counter.v".
+    Found 16-bit register for signal <Y>.
+    Found 4-bit adder for signal <Y[7]_GND_73_o_add_2_OUT> created at line 32.
+    Found 4-bit adder for signal <Y[11]_GND_73_o_add_4_OUT> created at line 37.
+    Found 16-bit adder for signal <Y[15]_GND_73_o_add_6_OUT> created at line 46.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <basic_counter> synthesized.
+
+Synthesizing Unit <clock_divider_4>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\clock_divider_4(2).v".
+        COUNTER_DIV = 100000
+    Found 17-bit register for signal <counter>.
+    Found 1-bit register for signal <clk_out>.
+    Found 17-bit adder for signal <counter[16]_GND_74_o_add_2_OUT> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <clock_divider_4> synthesized.
+
+Synthesizing Unit <seven_alternate>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\seven_alternate.v".
+    Found 4-bit register for signal <AN>.
+    Found 4-bit register for signal <small_bin>.
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_GND_75_o_add_1_OUT> created at line 36.
+    Found 4x4-bit Read Only RAM for signal <count[1]_GND_75_o_wide_mux_2_OUT>
+    Found 4-bit 4-to-1 multiplexer for signal <count[1]_big_bin[15]_wide_mux_3_OUT> created at line 37.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <seven_alternate> synthesized.
+
+Synthesizing Unit <binary_to_segment>.
+    Related source file is "\\ad\eng\users\z\j\zjacky\EC 311\final\bin2led7.v".
+    Found 16x7-bit Read Only RAM for signal <seven>
+    Summary:
+	inferred   1 RAM(s).
+Unit <binary_to_segment> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 27
+ 11-bit adder                                          : 6
+ 11-bit subtractor                                     : 1
+ 12-bit adder                                          : 4
+ 16-bit adder                                          : 5
+ 17-bit adder                                          : 5
+ 2-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 51-bit adder                                          : 2
+# Registers                                            : 48
+ 1-bit register                                        : 18
+ 11-bit register                                       : 7
+ 16-bit register                                       : 1
+ 17-bit register                                       : 5
+ 2-bit register                                        : 3
+ 3-bit register                                        : 2
+ 4-bit register                                        : 10
+ 51-bit register                                       : 2
+# Latches                                              : 68
+ 1-bit latch                                           : 68
+# Comparators                                          : 33
+ 1-bit comparator equal                                : 4
+ 11-bit comparator greater                             : 5
+ 11-bit comparator lessequal                           : 16
+ 12-bit comparator lessequal                           : 4
+ 16-bit comparator greater                             : 4
+# Multiplexers                                         : 18
+ 1-bit 51-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 8
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <next_state4_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state4_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state4_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state3_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state3_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state3_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state2_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state2_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state2_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state1_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state1_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state1_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state4_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state4_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state4_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state3_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state3_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state3_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state2_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state2_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state2_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state1_3> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state1_2> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state1_1> (without init value) has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <next_state2<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <next_state1<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <next_state3<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <next_state4<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <state1<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <state2<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <state3<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+WARNING:Xst:2404 -  FFs/Latches <state4<3:1>> (without init value) have a constant value of 0 in block <vga_display>.
+
+Synthesizing (advanced) Unit <Debouncer>.
+The following registers are absorbed into counter <PB_cnt>: 1 register on signal <PB_cnt>.
+Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <binary_to_segment>.
+INFO:Xst:3231 - The small RAM <Mram_seven> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bin>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seven>         |          |
+    -----------------------------------------------------------------------
+Unit <binary_to_segment> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider_4>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <clock_divider_4> synthesized (advanced).
+
+Synthesizing (advanced) Unit <seven_alternate>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+INFO:Xst:3231 - The small RAM <Mram_count[1]_GND_75_o_wide_mux_2_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <count[1]_GND_75_o_add_1_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <seven_alternate> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_controller_640_60>.
+The following registers are absorbed into counter <hcounter>: 1 register on signal <hcounter>.
+The following registers are absorbed into counter <vcounter>: 1 register on signal <vcounter>.
+Unit <vga_controller_640_60> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vga_display>.
+The following registers are absorbed into counter <slow_count1>: 1 register on signal <slow_count1>.
+The following registers are absorbed into counter <slow_count2>: 1 register on signal <slow_count2>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <x>: 1 register on signal <x>.
+The following registers are absorbed into accumulator <y1>: 1 register on signal <y1>.
+The following registers are absorbed into accumulator <y3>: 1 register on signal <y3>.
+The following registers are absorbed into accumulator <y2>: 1 register on signal <y2>.
+The following registers are absorbed into accumulator <y4>: 1 register on signal <y4>.
+Unit <vga_display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 14
+ 12-bit adder                                          : 4
+ 16-bit adder                                          : 5
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 2
+ 51-bit adder                                          : 2
+# Counters                                             : 12
+ 11-bit down counter                                   : 1
+ 11-bit up counter                                     : 2
+ 17-bit up counter                                     : 5
+ 2-bit up counter                                      : 2
+ 51-bit up counter                                     : 2
+# Accumulators                                         : 4
+ 11-bit up accumulator                                 : 4
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Comparators                                          : 33
+ 1-bit comparator equal                                : 4
+ 11-bit comparator greater                             : 5
+ 11-bit comparator lessequal                           : 16
+ 12-bit comparator lessequal                           : 4
+ 16-bit comparator greater                             : 4
+# Multiplexers                                         : 18
+ 1-bit 51-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 2-bit 2-to-1 multiplexer                              : 5
+ 3-bit 2-to-1 multiplexer                              : 8
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <next_state1> in Unit <vga_display> is equivalent to the following 3 FFs/Latches, which will be removed : <next_state2> <next_state3> <next_state4> 
+INFO:Xst:2261 - The FF/Latch <state1> in Unit <vga_display> is equivalent to the following 3 FFs/Latches, which will be removed : <state2> <state3> <state4> 
+INFO:Xst:2146 - In block <vga_display>, Counter <slow_count1> <count> are equivalent, XST will keep only <slow_count1>.
+WARNING:Xst:2677 - Node <slow_count2_32> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_33> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_34> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_35> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_36> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_37> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_38> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_39> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_40> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_41> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_42> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_43> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_44> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_45> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_46> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_47> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_48> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_49> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count2_50> of sequential type is unconnected in block <vga_display>.
+INFO:Xst:2261 - The FF/Latch <R_0> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <R_1> <R_2> 
+INFO:Xst:2261 - The FF/Latch <G_0> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <G_1> <G_2> 
+INFO:Xst:2261 - The FF/Latch <B_0> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <B_1> 
+
+Optimizing unit <vga_display> ...
+
+Optimizing unit <vga_controller_640_60> ...
+
+Optimizing unit <Debouncer> ...
+
+Optimizing unit <basic_counter> ...
+
+Optimizing unit <seven_alternate> ...
+WARNING:Xst:1293 - FF/Latch <x_3> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_4> has a constant value of 1 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_5> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_6> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_7> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_8> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_9> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <x_10> has a constant value of 0 in block <vga_display>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <slow_count1_32> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_33> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_34> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_35> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_36> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_37> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_38> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_39> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_40> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_41> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_42> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_43> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_44> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_45> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_46> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_47> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_48> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_49> of sequential type is unconnected in block <vga_display>.
+WARNING:Xst:2677 - Node <slow_count1_50> of sequential type is unconnected in block <vga_display>.
+INFO:Xst:2261 - The FF/Latch <TF/C1/counter_0> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <slow_count1_0> <slow_count2_0> 
+INFO:Xst:2261 - The FF/Latch <TF/C1/counter_1> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <slow_count1_1> <slow_count2_1> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_10> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_10> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_5> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_5> 
+INFO:Xst:2261 - The FF/Latch <TF/C1/counter_2> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <slow_count1_2> <slow_count2_2> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_11> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_11> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_6> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_6> 
+INFO:Xst:2261 - The FF/Latch <TF/C1/counter_3> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <slow_count1_3> <slow_count2_3> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_12> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_12> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_7> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_7> 
+INFO:Xst:2261 - The FF/Latch <TF/C1/counter_4> in Unit <vga_display> is equivalent to the following 2 FFs/Latches, which will be removed : <slow_count1_4> <slow_count2_4> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_13> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_13> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_8> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_8> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_9> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_9> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_14> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_14> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_15> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_15> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_20> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_20> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_16> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_16> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_21> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_21> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_17> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_17> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_22> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_22> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_18> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_18> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_23> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_23> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_19> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_19> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_24> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_24> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_25> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_25> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_30> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_30> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_26> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_26> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_27> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_27> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_28> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_28> 
+INFO:Xst:2261 - The FF/Latch <slow_count1_29> in Unit <vga_display> is equivalent to the following FF/Latch, which will be removed : <slow_count2_29> 
+INFO:Xst:3203 - The FF/Latch <x_1> in Unit <vga_display> is the opposite to the following FF/Latch, which will be removed : <x_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vga_display, actual ratio is 8.
+WARNING:Xst:2677 - Node <slow_count1_31> of sequential type is unconnected in block <vga_display>.
+FlipFlop R_0 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop G_0 has been replicated 2 time(s) to handle iob=true attribute.
+FlipFlop B_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 234
+ Flip-Flops                                            : 234
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vga_display.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1211
+#      GND                         : 1
+#      INV                         : 31
+#      LUT1                        : 285
+#      LUT2                        : 28
+#      LUT3                        : 48
+#      LUT4                        : 110
+#      LUT5                        : 74
+#      LUT6                        : 82
+#      MUXCY                       : 329
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 221
+# FlipFlops/Latches                : 302
+#      FD                          : 81
+#      FDE                         : 8
+#      FDR                         : 99
+#      FDRE                        : 44
+#      FDS                         : 2
+#      LDC                         : 64
+#      LDCE                        : 4
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 5
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             294  out of  18224     1%  
+ Number of Slice LUTs:                  658  out of   9112     7%  
+    Number used as Logic:               658  out of   9112     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    673
+   Number with an unused Flip Flop:     379  out of    673    56%  
+   Number with an unused LUT:            15  out of    673     2%  
+   Number of fully used LUT-FF pairs:   279  out of    673    41%  
+   Number of unique control sets:        38
+
+IO Utilization: 
+ Number of IOs:                          35
+ Number of bonded IOBs:                  27  out of    232    11%  
+    IOB Flip Flops/Latches:               8
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                         | Clock buffer(FF name)  | Load  |
+---------------------------------------------------------------------+------------------------+-------+
+clk                                                                  | BUFGP                  | 137   |
+moving_box1_stable_box1_AND_72_o(moving_box1_stable_box1_AND_72_o1:O)| NONE(*)(true_count1_14)| 17    |
+moving_box2_stable_box2_AND_74_o(moving_box2_stable_box2_AND_74_o1:O)| NONE(*)(true_count2_14)| 17    |
+moving_box3_stable_box3_AND_76_o(moving_box3_stable_box3_AND_76_o1:O)| NONE(*)(true_count3_14)| 17    |
+moving_box4_stable_box4_AND_78_o(moving_box4_stable_box4_AND_78_o1:O)| NONE(*)(true_count4_14)| 17    |
+slow_clk1                                                            | BUFG                   | 46    |
+clk_25Mhz                                                            | BUFG                   | 25    |
+if_overlap1_if_overlap4_OR_71_o(if_overlap1_if_overlap4_OR_71_o1:O)  | NONE(*)(TF/T1/Y_15)    | 16    |
+TF/C1/clk_out                                                        | NONE(TF/S1/count_1)    | 10    |
+---------------------------------------------------------------------+------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.600ns (Maximum Frequency: 217.401MHz)
+   Minimum input arrival time before clock: 3.005ns
+   Maximum output required time after clock: 4.821ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.194ns (frequency: 238.450MHz)
+  Total number of paths / destination ports: 1993 / 218
+-------------------------------------------------------------------------
+Delay:               4.194ns (Levels of Logic = 33)
+  Source:            TF/C1/counter_1 (FF)
+  Destination:       slow_count2_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: TF/C1/counter_1 to slow_count2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.447   0.774  TF/C1/counter_1 (TF/C1/counter_1)
+     LUT1:I0->O            1   0.205   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<1>_rt (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<1>_rt)
+     MUXCY:S->O            1   0.172   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<1> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<2> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<3> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<4> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<5> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<6> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<7> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<8> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<9> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<10> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<11> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<12> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<13> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<14> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<15> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<16> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<17> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<18> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<19> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<19>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<20> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<21> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<22> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<23> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<24> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<25> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<26> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<27> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<27>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<28> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<28>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<29> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<29>)
+     MUXCY:CI->O           0   0.019   0.000  Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<30> (Madd_slow_count2[50]_GND_1_o_add_5_OUT_cy<30>)
+     XORCY:CI->O           3   0.180   0.651  Madd_slow_count2[50]_GND_1_o_add_5_OUT_xor<31> (slow_count2[50]_GND_1_o_add_5_OUT<31>)
+     LUT2:I1->O            1   0.205   0.579  GND_1_o_GND_1_o_AND_1_o1 (GND_1_o_GND_1_o_AND_1_o)
+     FDR:R                     0.430          slow_count2_31
+    ----------------------------------------
+    Total                      4.194ns (2.190ns logic, 2.004ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'moving_box1_stable_box1_AND_72_o'
+  Clock period: 4.600ns (frequency: 217.401MHz)
+  Total number of paths / destination ports: 272 / 17
+-------------------------------------------------------------------------
+Delay:               4.600ns (Levels of Logic = 10)
+  Source:            true_count1_0 (LATCH)
+  Destination:       if_overlap1 (LATCH)
+  Source Clock:      moving_box1_stable_box1_AND_72_o falling
+  Destination Clock: moving_box1_stable_box1_AND_72_o falling
+
+  Data Path: true_count1_0 to if_overlap1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  true_count1_0 (true_count1_0)
+     INV:I->O              1   0.206   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_lut<0>_INV_0 (Madd_true_count1[15]_GND_1_o_add_150_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<0> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<1> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<2> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<3> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<4> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<5> (Madd_true_count1[15]_GND_1_o_add_150_OUT_cy<5>)
+     XORCY:CI->O           2   0.180   0.981  Madd_true_count1[15]_GND_1_o_add_150_OUT_xor<6> (true_count1[15]_GND_1_o_add_150_OUT<6>)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_true_count1[15]_LessThan_152_o21 (GND_1_o_true_count1[15]_LessThan_152_o2)
+     LUT6:I5->O            1   0.205   0.579  GND_1_o_true_count1[15]_LessThan_152_o23 (GND_1_o_true_count1[15]_LessThan_152_o)
+     LDCE:GE                   0.322          if_overlap1
+    ----------------------------------------
+    Total                      4.600ns (1.881ns logic, 2.719ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'moving_box2_stable_box2_AND_74_o'
+  Clock period: 4.600ns (frequency: 217.401MHz)
+  Total number of paths / destination ports: 272 / 17
+-------------------------------------------------------------------------
+Delay:               4.600ns (Levels of Logic = 10)
+  Source:            true_count2_0 (LATCH)
+  Destination:       if_overlap2 (LATCH)
+  Source Clock:      moving_box2_stable_box2_AND_74_o falling
+  Destination Clock: moving_box2_stable_box2_AND_74_o falling
+
+  Data Path: true_count2_0 to if_overlap2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  true_count2_0 (true_count2_0)
+     INV:I->O              1   0.206   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_lut<0>_INV_0 (Madd_true_count2[15]_GND_1_o_add_154_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<0> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<1> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<2> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<3> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<4> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<5> (Madd_true_count2[15]_GND_1_o_add_154_OUT_cy<5>)
+     XORCY:CI->O           2   0.180   0.981  Madd_true_count2[15]_GND_1_o_add_154_OUT_xor<6> (true_count2[15]_GND_1_o_add_154_OUT<6>)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_true_count2[15]_LessThan_156_o21 (GND_1_o_true_count2[15]_LessThan_156_o2)
+     LUT6:I5->O            1   0.205   0.579  GND_1_o_true_count2[15]_LessThan_156_o23 (GND_1_o_true_count2[15]_LessThan_156_o)
+     LDCE:GE                   0.322          if_overlap2
+    ----------------------------------------
+    Total                      4.600ns (1.881ns logic, 2.719ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'moving_box3_stable_box3_AND_76_o'
+  Clock period: 4.600ns (frequency: 217.401MHz)
+  Total number of paths / destination ports: 272 / 17
+-------------------------------------------------------------------------
+Delay:               4.600ns (Levels of Logic = 10)
+  Source:            true_count3_0 (LATCH)
+  Destination:       if_overlap3 (LATCH)
+  Source Clock:      moving_box3_stable_box3_AND_76_o falling
+  Destination Clock: moving_box3_stable_box3_AND_76_o falling
+
+  Data Path: true_count3_0 to if_overlap3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  true_count3_0 (true_count3_0)
+     INV:I->O              1   0.206   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_lut<0>_INV_0 (Madd_true_count3[15]_GND_1_o_add_158_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<0> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<1> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<2> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<3> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<4> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<5> (Madd_true_count3[15]_GND_1_o_add_158_OUT_cy<5>)
+     XORCY:CI->O           2   0.180   0.981  Madd_true_count3[15]_GND_1_o_add_158_OUT_xor<6> (true_count3[15]_GND_1_o_add_158_OUT<6>)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_true_count3[15]_LessThan_160_o21 (GND_1_o_true_count3[15]_LessThan_160_o2)
+     LUT6:I5->O            1   0.205   0.579  GND_1_o_true_count3[15]_LessThan_160_o23 (GND_1_o_true_count3[15]_LessThan_160_o)
+     LDCE:GE                   0.322          if_overlap3
+    ----------------------------------------
+    Total                      4.600ns (1.881ns logic, 2.719ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'moving_box4_stable_box4_AND_78_o'
+  Clock period: 4.600ns (frequency: 217.401MHz)
+  Total number of paths / destination ports: 272 / 17
+-------------------------------------------------------------------------
+Delay:               4.600ns (Levels of Logic = 10)
+  Source:            true_count4_0 (LATCH)
+  Destination:       if_overlap4 (LATCH)
+  Source Clock:      moving_box4_stable_box4_AND_78_o falling
+  Destination Clock: moving_box4_stable_box4_AND_78_o falling
+
+  Data Path: true_count4_0 to if_overlap4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.498   0.579  true_count4_0 (true_count4_0)
+     INV:I->O              1   0.206   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_lut<0>_INV_0 (Madd_true_count4[15]_GND_1_o_add_162_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<0> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<1> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<2> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<3> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<4> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<5> (Madd_true_count4[15]_GND_1_o_add_162_OUT_cy<5>)
+     XORCY:CI->O           2   0.180   0.981  Madd_true_count4[15]_GND_1_o_add_162_OUT_xor<6> (true_count4[15]_GND_1_o_add_162_OUT<6>)
+     LUT6:I0->O            1   0.203   0.580  GND_1_o_true_count4[15]_LessThan_164_o21 (GND_1_o_true_count4[15]_LessThan_164_o2)
+     LUT6:I5->O            1   0.205   0.579  GND_1_o_true_count4[15]_LessThan_164_o23 (GND_1_o_true_count4[15]_LessThan_164_o)
+     LDCE:GE                   0.322          if_overlap4
+    ----------------------------------------
+    Total                      4.600ns (1.881ns logic, 2.719ns route)
+                                       (40.9% logic, 59.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'slow_clk1'
+  Clock period: 4.269ns (frequency: 234.262MHz)
+  Total number of paths / destination ports: 956 / 133
+-------------------------------------------------------------------------
+Delay:               4.269ns (Levels of Logic = 2)
+  Source:            state1 (FF)
+  Destination:       y1_0 (FF)
+  Source Clock:      slow_clk1 rising
+  Destination Clock: slow_clk1 rising
+
+  Data Path: state1 to y1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              48   0.447   1.520  state1 (state1)
+     LUT6:I5->O            1   0.205   0.580  _n04191 (_n04191)
+     LUT2:I1->O           11   0.205   0.882  _n04193 (_n0419)
+     FDRE:R                    0.430          y1_0
+    ----------------------------------------
+    Total                      4.269ns (1.287ns logic, 2.982ns route)
+                                       (30.1% logic, 69.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_25Mhz'
+  Clock period: 4.103ns (frequency: 243.712MHz)
+  Total number of paths / destination ports: 534 / 25
+-------------------------------------------------------------------------
+Delay:               4.103ns (Levels of Logic = 3)
+  Source:            vc/vcounter_4 (FF)
+  Destination:       vc/vcounter_0 (FF)
+  Source Clock:      clk_25Mhz rising
+  Destination Clock: clk_25Mhz rising
+
+  Data Path: vc/vcounter_4 to vc/vcounter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              22   0.447   1.478  vc/vcounter_4 (vc/vcounter_4)
+     LUT6:I1->O            1   0.203   0.580  vc/Mcount_vcounter_val1 (vc/Mcount_vcounter_val1)
+     LUT6:I5->O           11   0.205   0.883  vc/Mcount_vcounter_val2 (vc/Mcount_vcounter_val2)
+     LUT5:I4->O            1   0.205   0.000  vc/vcounter_0_rstpot (vc/vcounter_0_rstpot)
+     FD:D                      0.102          vc/vcounter_0
+    ----------------------------------------
+    Total                      4.103ns (1.162ns logic, 2.941ns route)
+                                       (28.3% logic, 71.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'if_overlap1_if_overlap4_OR_71_o'
+  Clock period: 3.823ns (frequency: 261.544MHz)
+  Total number of paths / destination ports: 372 / 16
+-------------------------------------------------------------------------
+Delay:               3.823ns (Levels of Logic = 3)
+  Source:            TF/T1/Y_10 (FF)
+  Destination:       TF/T1/Y_7 (FF)
+  Source Clock:      if_overlap1_if_overlap4_OR_71_o rising
+  Destination Clock: if_overlap1_if_overlap4_OR_71_o rising
+
+  Data Path: TF/T1/Y_10 to TF/T1/Y_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   0.973  TF/T1/Y_10 (TF/T1/Y_10)
+     LUT4:I1->O           16   0.205   1.109  TF/T1/Y[11]_PWR_6_o_equal_6_o<11>1 (TF/T1/Y[11]_PWR_6_o_equal_6_o)
+     LUT6:I4->O            1   0.203   0.580  TF/T1/Mmux_Y[15]_Y[15]_mux_9_OUT141 (TF/T1/Mmux_Y[15]_Y[15]_mux_9_OUT14)
+     LUT5:I4->O            1   0.205   0.000  TF/T1/Mmux_Y[15]_Y[15]_mux_9_OUT142 (TF/T1/Y[15]_Y[15]_mux_9_OUT<7>)
+     FD:D                      0.102          TF/T1/Y_7
+    ----------------------------------------
+    Total                      3.823ns (1.162ns logic, 2.661ns route)
+                                       (30.4% logic, 69.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'TF/C1/clk_out'
+  Clock period: 2.190ns (frequency: 456.663MHz)
+  Total number of paths / destination ports: 19 / 10
+-------------------------------------------------------------------------
+Delay:               2.190ns (Levels of Logic = 1)
+  Source:            TF/S1/count_0 (FF)
+  Destination:       TF/S1/count_0 (FF)
+  Source Clock:      TF/C1/clk_out rising
+  Destination Clock: TF/C1/clk_out rising
+
+  Data Path: TF/S1/count_0 to TF/S1/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   0.856  TF/S1/count_0 (TF/S1/count_0)
+     INV:I->O              1   0.206   0.579  TF/S1/Mcount_count_xor<0>11_INV_0 (TF/S1/Result<0>)
+     FD:D                      0.102          TF/S1/count_0
+    ----------------------------------------
+    Total                      2.190ns (0.755ns logic, 1.435ns route)
+                                       (34.5% logic, 65.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.231ns (Levels of Logic = 1)
+  Source:            trigger4 (PAD)
+  Destination:       df4/PB_sync_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: trigger4 to df4/PB_sync_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  trigger4_IBUF (trigger4_IBUF)
+     FDR:R                     0.430          df4/PB_sync_0
+    ----------------------------------------
+    Total                      2.231ns (1.652ns logic, 0.579ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_25Mhz'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              3.005ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       vc/vcounter_0 (FF)
+  Destination Clock: clk_25Mhz rising
+
+  Data Path: rst to vc/vcounter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.478  rst_IBUF (rst_IBUF)
+     LUT5:I0->O            1   0.203   0.000  vc/vcounter_0_rstpot (vc/vcounter_0_rstpot)
+     FD:D                      0.102          vc/vcounter_0
+    ----------------------------------------
+    Total                      3.005ns (1.527ns logic, 1.478ns route)
+                                       (50.8% logic, 49.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            R_0_1 (FF)
+  Destination:       R<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: R_0_1 to R<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  R_0_1 (R_0_1)
+     OBUF:I->O                 2.571          R_2_OBUF (R<2>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'TF/C1/clk_out'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              4.821ns (Levels of Logic = 2)
+  Source:            TF/S1/small_bin_0 (FF)
+  Destination:       seven<6> (PAD)
+  Source Clock:      TF/C1/clk_out rising
+
+  Data Path: TF/S1/small_bin_0 to seven<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.447   1.021  TF/S1/small_bin_0 (TF/S1/small_bin_0)
+     LUT4:I0->O            1   0.203   0.579  TF/B1/Mram_seven21 (seven_2_OBUF)
+     OBUF:I->O                 2.571          seven_2_OBUF (seven<2>)
+    ----------------------------------------
+    Total                      4.821ns (3.221ns logic, 1.600ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_25Mhz'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            vc/HS (FF)
+  Destination:       HS (PAD)
+  Source Clock:      clk_25Mhz rising
+
+  Data Path: vc/HS to HS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  vc/HS (vc/HS)
+     OBUF:I->O                 2.571          HS_OBUF (HS)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock TF/C1/clk_out
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+TF/C1/clk_out                  |    2.190|         |         |         |
+if_overlap1_if_overlap4_OR_71_o|    1.802|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.194|         |         |         |
+clk_25Mhz      |    7.975|         |         |         |
+slow_clk1      |    9.944|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_25Mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_25Mhz      |    4.103|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock if_overlap1_if_overlap4_OR_71_o
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+if_overlap1_if_overlap4_OR_71_o|    3.823|         |         |         |
+-------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock moving_box1_stable_box1_AND_72_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    1.969|         |
+moving_box1_stable_box1_AND_72_o|         |         |    4.600|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock moving_box2_stable_box2_AND_74_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    1.969|         |
+moving_box2_stable_box2_AND_74_o|         |         |    4.600|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock moving_box3_stable_box3_AND_76_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    1.969|         |
+moving_box3_stable_box3_AND_76_o|         |         |    4.600|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock moving_box4_stable_box4_AND_78_o
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+clk                             |         |         |    1.969|         |
+moving_box4_stable_box4_AND_78_o|         |         |    4.600|         |
+--------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock slow_clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.128|         |         |         |
+slow_clk1      |    4.269|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.18 secs
+ 
+--> 
+
+Total memory usage is 259236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  189 (   0 filtered)
+Number of infos    :   49 (   0 filtered)
+
